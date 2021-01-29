@@ -1,14 +1,20 @@
 import styled from "styled-components";
 import FreedomBg from "../assets/freedom.jpg";
 
-export const Main = styled.main``;
+export const Main = styled.main`
+  padding-top: 36px;
+`;
 
 export const MainSection = styled.section`
   &.main__product-overview {
     background: url(${FreedomBg});
+    background-size: cover;
+    background-origin: border-box;
+    background-position: 60% 70%;
     width: 100%;
     height: 528px;
     padding: 10px;
+    position: relative;
   }
   &.key-features {
     background: #ff1b68;
@@ -57,6 +63,9 @@ export const MainH1 = styled.h1`
   &.overview {
     color: white;
     font-family: "Anton", sans-serif;
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
   }
 `;
 

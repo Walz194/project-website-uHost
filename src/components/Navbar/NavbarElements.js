@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 export const Header = styled.header`
   width: 100%;
+  position: fixed;
+  z-index: 1;
   background: #2ddf5c;
   padding: 8px 16px;
 `;
@@ -15,6 +17,10 @@ export const HeaderBrand = styled.div`
 export const BrandLink = styled(Link)`
   font-weight: 700;
   font-size: 22px;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  display: inline-block;
   text-decoration: none;
   color: #0e4f1f;
 `;
@@ -61,4 +67,9 @@ export const CallToAction = styled(Link)`
     background: white;
     border: none;
   }
+`;
+
+export const LogoImg = styled.img`
+  width: 100%;
+  height: 100%;
 `;

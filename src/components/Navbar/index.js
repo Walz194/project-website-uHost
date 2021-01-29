@@ -8,25 +8,29 @@ import {
   NavLi,
   NavLinks,
   CallToAction,
+  LogoImg,
 } from "./NavbarElements";
+import Logo from "../../assets/uhost-icon.png";
 
 const Navbar = () => {
   return (
     <React.Fragment>
       <Header>
         <HeaderBrand>
-          <BrandLink>uHost</BrandLink>
+          <BrandLink to="/">
+            <LogoImg src={Logo} />
+          </BrandLink>
         </HeaderBrand>
         <HeaderNav>
           <NavUl>
             <NavLi>
-              <NavLinks>Packages</NavLinks>
+              <NavLinks to="/packages">Packages</NavLinks>
             </NavLi>
             <NavLi>
-              <NavLinks>Customers</NavLinks>
+              <NavLinks to="customers">Customers</NavLinks>
             </NavLi>
             <NavLi>
-              <CallToAction>Start Hosting</CallToAction>
+              <CallToAction to="start-action">Start Hosting</CallToAction>
             </NavLi>
           </NavUl>
         </HeaderNav>

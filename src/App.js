@@ -1,14 +1,18 @@
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import PageMain from "./components/Main";
 import PageFooter from "./components/Footer";
+import PagePackage from "./components/Packages";
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <PageMain />
+      <Switch>
+        <Route path="/packages" component={PagePackage} />
+        <Route path="/" component={PageMain} />
+      </Switch>
       <PageFooter />
     </Router>
   );
