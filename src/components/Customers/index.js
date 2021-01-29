@@ -2,31 +2,41 @@
  * @author Olawale
  * @email olawale.akinodanye@gmail.com
  * @create date 2021-01-29 03:29:38
- * @modify date 2021-01-29 11:42:59
+ * @modify date 2021-01-29 11:59:27
  * @desc [description]
  */
 import React from "react";
 import {
   Main,
   Customer,
+  CustomerName,
+  PageLink,
   CustomerImg,
   Testimonial,
   TestimonySubtitle,
   TestimonyText,
+  ImgWrapper,
 } from "./CustomerElements";
 import img1 from "../../assets/customer-1.jpg";
-import img2 from "../../assets/customer-1.jpg";
+import img2 from "../../assets/customer-2.jpg";
 
 const PageCustomer = () => {
   return (
     <Main>
       {/* Customer 1 */}
       <Customer>
-        <CustomerImg src={img1} />
+        <ImgWrapper>
+          <CustomerImg src={img1} />
+        </ImgWrapper>
         <Testimonial>
           <CustomerName>Mike Statham</CustomerName>
-          <TestimonySubtitle></TestimonySubtitle>
-          <TestimonyText></TestimonyText>
+          <TestimonySubtitle>
+            Founder of <PageLink>tech-analysis.com</PageLink>
+          </TestimonySubtitle>
+          <TestimonyText>
+            uHost helped me realize my project with a highly constrained budget
+            in like no time.
+          </TestimonyText>
         </Testimonial>
       </Customer>
       {/* Customer 2 */}
@@ -41,7 +51,9 @@ const PageCustomer = () => {
             and file storage solution. I found it in uHost!
           </TestimonyText>
         </Testimonial>
-        <CustomerImg src={img2} />
+        <ImgWrapper>
+          <CustomerImg src={img2} />
+        </ImgWrapper>
       </Customer>
     </Main>
   );

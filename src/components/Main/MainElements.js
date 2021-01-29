@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FreedomBg from "../assets/freedom.jpg";
+import FreedomBg from "../../assets/freedom.jpg";
 
 export const Main = styled.main`
   padding-top: 36px;
