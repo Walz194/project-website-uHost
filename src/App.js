@@ -4,6 +4,7 @@ import "./App.css";
 import PageMain from "./components/Main";
 import PageFooter from "./components/Footer";
 import PagePackage from "./components/Packages";
+import PageCustomer from "./components/Customers";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/packages" component={PagePackage} />
+        <Route path="/customers" component={PageCustomer} />
         <Route path="/" component={PageMain} />
       </Switch>
       <PageFooter />
