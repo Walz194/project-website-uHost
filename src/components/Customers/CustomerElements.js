@@ -1,3 +1,10 @@
+/**
+ * @author Olawale
+ * @email olawale.akinodanye@gmail.com
+ * @create date 2021-01-29 12:22:34
+ * @modify date 2021-01-29 12:22:34
+ * @desc [description]
+ */
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 

@@ -11,7 +11,11 @@ import {
   ButtonWrapper,
 } from "./MainElements";
 
-const PageArticle = () => {
+const PageArticle = ({ modalOpen, setModalOpen, setShowBackdrop }) => {
+  const showModal = () => {
+    setModalOpen(true);
+    setShowBackdrop(true);
+  };
   return (
     <React.Fragment>
       <Article className="plan">
@@ -19,12 +23,16 @@ const PageArticle = () => {
         <MainH2 className="plan__price">{ArticleOne.planPrice}</MainH2>
         <MainH3>{ArticleOne.description}</MainH3>
         <MainUl className="plan__features">
-          {ArticleOne.planFeatures.map((feature) => (
-            <MainLi className="plan__feature">{feature}</MainLi>
+          {ArticleOne.planFeatures.map((feature, index) => (
+            <MainLi className="plan__feature" key={index}>
+              {feature}
+            </MainLi>
           ))}
         </MainUl>
         <ButtonWrapper>
-          <Button className="button">{ArticleOne.btnText}</Button>
+          <Button className="button" onClick={showModal}>
+            {ArticleOne.btnText}
+          </Button>
         </ButtonWrapper>
       </Article>
 
@@ -34,12 +42,16 @@ const PageArticle = () => {
         <MainH2 className="plan__price">{ArticleTwo.planPrice}</MainH2>
         <MainH3>{ArticleTwo.description}</MainH3>
         <MainUl className="plan__features">
-          {ArticleTwo.planFeatures.map((feature) => (
-            <MainLi className="plan__feature">{feature}</MainLi>
+          {ArticleTwo.planFeatures.map((feature, index) => (
+            <MainLi className="plan__feature" key={index}>
+              {feature}
+            </MainLi>
           ))}
         </MainUl>
         <ButtonWrapper>
-          <Button className="button">{ArticleTwo.btnText}</Button>
+          <Button className="button" onClick={showModal}>
+            {ArticleTwo.btnText}
+          </Button>
         </ButtonWrapper>
       </Article>
 
@@ -48,12 +60,16 @@ const PageArticle = () => {
         <MainH2 className="plan__price">{ArticleThree.planPrice}</MainH2>
         <MainH3>{ArticleThree.description}</MainH3>
         <MainUl className="plan__features">
-          {ArticleThree.planFeatures.map((feature) => (
-            <MainLi className="plan__feature">{feature}</MainLi>
+          {ArticleThree.planFeatures.map((feature, index) => (
+            <MainLi className="plan__feature" key={index}>
+              {feature}
+            </MainLi>
           ))}
         </MainUl>
         <ButtonWrapper>
-          <Button className="button">{ArticleThree.btnText}</Button>
+          <Button className="button" onClick={showModal}>
+            {ArticleThree.btnText}
+          </Button>
         </ButtonWrapper>
       </Article>
     </React.Fragment>

@@ -10,16 +10,20 @@ import {
 } from "./MainElements";
 import PageArticle from "./PageArticle";
 
-const PageMain = () => {
+const PageMain = ({ modalOpen, setModalOpen, setShowBackdrop }) => {
   return (
     <React.Fragment>
-      <Main class="main">
+      <Main className="main">
         <MainSection className="main__product-overview">
           <MainH1 className="overview">Get the freedom you deserve.</MainH1>
         </MainSection>
         <MainSection className="main__plan-section">
           <MainH1 className="section-title">Choose Your Plan</MainH1>
-          <PageArticle />
+          <PageArticle
+            modalOpen={modalOpen}
+            setModalOpen={setModalOpen}
+            setShowBackdrop={setShowBackdrop}
+          />
         </MainSection>
         <MainSection className="key-features">
           <MainH1 className="section-title plan-special">

@@ -2,7 +2,7 @@
  * @author Olawale
  * @email olawale.akinodanye@gmail.com
  * @create date 2021-01-29 03:29:38
- * @modify date 2021-01-29 11:59:27
+ * @modify date 2021-02-03 16:40:46
  * @desc [description]
  */
 import React from "react";
@@ -31,7 +31,7 @@ const PageCustomer = () => {
         <Testimonial>
           <CustomerName>Mike Statham</CustomerName>
           <TestimonySubtitle>
-            Founder of <PageLink>tech-analysis.com</PageLink>
+            Founder of <PageLink to="#">tech-analysis.com</PageLink>
           </TestimonySubtitle>
           <TestimonyText>
             uHost helped me realize my project with a highly constrained budget

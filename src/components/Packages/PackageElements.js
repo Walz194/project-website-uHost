@@ -1,14 +1,22 @@
+/**
+ * @author Olawale
+ * @email olawale.akinodanye@gmail.com
+ * @create date 2021-02-03 14:17:55
+ * @modify date 2021-02-03 14:25:48
+ * @desc [description]
+ */
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import PlansBg from "../../assets/plans-background.jpg";
 
 export const Main = styled.main`
-  padding-top: 36px;
+  padding-top: 2.25rem;
 `;
 
 export const Package = styled.div`
-  margin: 30px 0;
+  margin: 1.87rem 0;
   position: relative;
+  width: 80%;
   &.free {
     float: right;
     background: rgba(234, 252, 237, 0.95);
@@ -47,7 +55,7 @@ export const PackageLink = styled(Link)`
   display: block;
   cursor: pointer;
   text-decoration: none;
-  padding: 32px;
+  padding: 2rem;
   color: inherit;
 `;
 
@@ -55,11 +63,11 @@ export const PackageName = styled.h1``;
 
 export const Badge = styled.h1`
   position: absolute;
-  font-size: 12px;
-  padding: 8px;
+  font-size: 0.75rem;
+  padding: 0.5rem;
   right: 0;
   top: 0;
-  margin: 20px;
+  margin: 1.25rem;
   background-color: #ff5454;
 `;
 
@@ -69,8 +77,8 @@ export const PackageSubtitle = styled.h2`
 
 export const PackageDescription = styled.p`
   border: 1px solid #0e4f1f;
-  padding: 16px;
+  padding: 1rem;
   background: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #0e4f1f;
 `;

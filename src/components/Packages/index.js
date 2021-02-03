@@ -16,7 +16,7 @@ const PagePackage = () => {
     <Main>
       <Background />
       <Package className="plus">
-        <PackageLink to="/">
+        <PackageLink to="#">
           <PackageName>Our Plus Plan</PackageName>
           <Badge>RECOMMENDED</Badge>
           <PackageSubtitle>
@@ -29,7 +29,7 @@ const PagePackage = () => {
         </PackageLink>
       </Package>
       <Package className="free">
-        <PackageLink to="/">
+        <PackageLink to="#">
           <PackageName>Our Free Plan</PackageName>
 
           <PackageSubtitle>
@@ -42,7 +42,7 @@ const PagePackage = () => {
       </Package>
       <ClearFix />
       <Package className="premium">
-        <PackageLink to="/">
+        <PackageLink to="#">
           <PackageName>Our Premium Plan</PackageName>
           <PackageSubtitle>
             All your enterprise needs. Instant support, guaranteed uptime.

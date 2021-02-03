@@ -14,10 +14,10 @@ const PageFooter = () => {
         <Nav>
           <FooterUl>
             <FooterLi>
-              <FooterLink>Support</FooterLink>
+              <FooterLink to="#">Support</FooterLink>
             </FooterLi>
             <FooterLi>
-              <FooterLink>Terms of Use</FooterLink>
+              <FooterLink to="#">Terms of Use</FooterLink>
             </FooterLi>
           </FooterUl>
         </Nav>

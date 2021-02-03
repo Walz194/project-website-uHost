@@ -10,24 +10,24 @@ export const MainSection = styled.section`
     background: url(${FreedomBg});
     background-size: cover;
     background-origin: border-box;
-    background-position: 60% 70%;
+    background-position: left 10% bottom 80%;
     width: 100%;
-    height: 528px;
-    padding: 10px;
+    height: 30vh;
+    padding: 0.63rem;
     position: relative;
   }
   &.key-features {
     background: #ff1b68;
-    margin-top: 80px;
-    padding: 16px;
+    margin-top: 5rem;
+    padding: 1rem;
   }
 `;
 
 export const Article = styled.article`
   display: inline-block;
-  margin: 8px;
+  margin: 0.5rem;
   background: #d5ffdc;
-  padding: 16px;
+  padding: 1rem;
   text-align: center;
   width: 30%;
   vertical-align: middle;
@@ -50,7 +50,7 @@ export const MainH1 = styled.h1`
   &.plan__annotation {
     background: white;
     color: #19b84c;
-    padding: 10px;
+    padding: 0.63rem;
     border-radius: 8px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
@@ -63,7 +63,7 @@ export const MainH1 = styled.h1`
   &.overview {
     color: white;
     font-family: "Anton", sans-serif;
-    margin: 20px;
+    margin: 1.25rem;
     position: absolute;
     bottom: 0;
   }
@@ -96,20 +96,20 @@ export const MainUl = styled.ul`
 
 export const MainLi = styled.li`
   &.plan__feature {
-    margin: 8px 0;
+    margin: 0.5rem 0;
   }
   &.key-feature {
     display: inline-block;
     width: 30%;
-    margin: 5px 10px;
+    margin: 0.31rem 0.63rem;
     vertical-align: top;
   }
 `;
 
 export const MainDiv = styled.div`
   &.key-feature__image {
-    height: 128px;
-    width: 128px;
+    height: 8rem;
+    width: 8rem;
     background: #ffcede;
     border: 2px solid #424242;
     border-radius: 50%;
@@ -129,7 +129,7 @@ export const Button = styled.button`
     border: 1.5px solid #0e4f1f;
     border-radius: 8px;
     text-transform: uppercase;
-    padding: 8px;
+    padding: 0.5rem;
     font-weight: bold;
     cursor: pointer;
   }

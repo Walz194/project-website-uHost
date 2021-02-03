@@ -75,3 +75,24 @@ export const LogoImg = styled.img`
   width: 100%;
   height: 100%;
 `;
+
+export const Button = styled.button`
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const Span = styled.span`
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+`;

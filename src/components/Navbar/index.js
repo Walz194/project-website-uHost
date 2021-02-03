@@ -9,14 +9,25 @@ import {
   NavLinks,
   CallToAction,
   LogoImg,
+  Button,
+  Span,
 } from "./NavbarElements";
 import Logo from "../../assets/uhost-icon.png";
 
-const Navbar = () => {
+const Navbar = ({ isOpen, setIsOpen, setShowBackdrop }) => {
+  const toggleHandler = () => {
+    setIsOpen(!isOpen);
+    setShowBackdrop(true);
+  };
   return (
     <React.Fragment>
       <Header>
         <HeaderBrand>
+          <Button onClick={toggleHandler}>
+            <Span></Span>
+            <Span></Span>
+            <Span></Span>
+          </Button>
           <BrandLink to="/">
             <LogoImg src={Logo} />
           </BrandLink>
